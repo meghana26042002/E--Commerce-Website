@@ -1,0 +1,81 @@
+.navigationBar{
+    display: flex;
+
+    padding: 1rem;
+    background-color:white; 
+    box-shadow: 2px 2px 4px rgb(0,0,0,0.2);
+}
+
+.leftView{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-left: 5.5rem;
+}
+
+.rightView{
+    display: flex;
+    
+    padding: 1rem;
+    background-color:white; 
+    gap: 1rem;
+   
+    font-size: 1rem;
+    color:white;
+    margin-left: 10rem;
+}
+.list{
+    margin-left: 40px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: calibri;
+
+
+}
+.list:hover{
+    color: black;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid black;
+
+}
+.bg{
+    height: 30px;
+    margin-left: 13rem;
+    width: 16rem;
+    margin-top: 10px;
+    background-color: #f2f2f2b0;
+    border: none;
+    height: 2rem;
+
+    
+}
+
+.Searchicon{
+  
+ display: inline;
+    margin-right: 20px;
+   
+
+
+}
+.Searchbox{
+    margin-right: 10px;
+    width: 10px;
+    border: none;
+    
+}
+
+   h2{
+    display: inline;
+    
+    margin-left: 1rem;
+   
+
+   }
+   button{
+    height: 2.1rem;
+    border: none;
+    
+    
+   }

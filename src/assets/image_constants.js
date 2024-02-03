@@ -1,0 +1,1 @@
+export const mylogo=require('./Capture.JPG')
