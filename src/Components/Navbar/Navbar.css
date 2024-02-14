@@ -1,81 +1,120 @@
-.navigationBar{
-    display: flex;
+.navbar {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    height: 5rem;
 
-    padding: 1rem;
-    background-color:white; 
-    box-shadow: 2px 2px 4px rgb(0,0,0,0.2);
 }
 
-.leftView{
-    font-weight: 700;
-    font-size: 2rem;
-    margin-top: 10px;
-    margin-left: 5.5rem;
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.rightView{
+.navbar-logo {
+    font-size: 3rem;
+    margin-left: 5rem;
+}
+.navbar-logo:hover{
+    color: blueviolet;
+}
+
+.nav-elements {
     display: flex;
-    
-    padding: 1rem;
-    background-color:white; 
-    gap: 1rem;
-   
-    font-size: 1rem;
-    color:white;
     margin-left: 10rem;
 }
-.list{
-    margin-left: 40px;
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: calibri;
 
-
-}
-.list:hover{
-    color: black;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid black;
-
-}
-.bg{
-    height: 30px;
-    margin-left: 13rem;
-    width: 16rem;
-    margin-top: 10px;
-    background-color: #f2f2f2b0;
-    border: none;
-    height: 2rem;
-
-    
-}
-
-.Searchicon{
-  
- display: inline;
+.nav-item {
     margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    margin-left: 30px;
+
+
+
+}
+.nav-item:hover{
+    border-bottom: 2px solid black;
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    margin-right: 15rem;
+}
+
+.icon {
+    margin-left: 10px;
+    cursor: pointer;
    
 
 
 }
-.Searchbox{
-    margin-right: 10px;
-    width: 10px;
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid black ;
+    padding: 4px 10px;
+    margin-right: 20px;
+    border-radius: 5px;
+    background-color: hsl(0, 0%, 95%);
+   
+    
+  
+}
+
+.search-input {
+    padding: 5px;
+    margin-right: 5px;
     border: none;
+    outline: none;
+     background-color: #f1f1f1;
+   
     
 }
 
-   h2{
-    display: inline;
-    
-    margin-left: 1rem;
-   
+.nav-icon {
+    display: none;
+}
 
-   }
-   button{
-    height: 2.1rem;
-    border: none;
-    
-    
-   }
+
+@media screen and (max-width: 768px) {
+    .nav-elements {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 110px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        padding: 10px;
+        z-index: 1;
+       
+    }
+
+    .nav-elements.active {
+        display: flex;
+    }
+
+    .nav-item {
+        margin: 5px 0;
+        color: white;
+
+    }
+
+    .navbar-icons {
+        display: none;
+    }
+
+    .nav-icon {
+        display: block;
+    }
+    .search-input {
+        display: none
+    }
+
+}
